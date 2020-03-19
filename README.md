@@ -156,7 +156,74 @@ int main()
     //9.claculate energy bill
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
     
+    #include<iostream>
+    using namespace std;
     
+    int main()
+    {
+     int previous ,current,consumed;
+     float total;
+     cout<<"\n Initialial & final readings:";
+     cin>>previous>>current;
+     consumed=current-previous;
+     if(consumed>=200 && consumed<=500)
+     total=consumed*3.50;
+     else if(consumed>=100 && consumed<=199)
+     total=consumed*2.50;
+     else if(consumed<100)
+     total=consumed*1.50;
+     cout<<"\n Total no. of units consumed:"<<consumed;
+     cout<<"\n Eletric bill for units:"<<total'
+     return 0;
+    }
+    
+    ================================================
+    
+    //10. program to print lines by selecting the choice
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    #include<iostream>
+    int main()
+    {
+     int ch;
+     cout<<"\n 1.=======");
+     cout<<"\n 2.+++++++");
+     cout<<"\n 3.*******");
+     cout<<"\n 4.#######");
+     cout<<"\n 5.Exit");
+     cout<<"\n Enter your choice";
+     cin>>ch;
+     switch(ch)
+       {
+        case 1:
+        cout<<"\n =======";
+        break;
+         case 2:
+        cout<<"\n +++++++";
+        break;
+         case 3:
+        cout<<"\n *******";
+        break;
+         case 4:
+        cout<<"\n #######";
+        break;
+        case 5:
+        cout<<"\n Terminated by choice";
+        break;
+        
+      default;
+      cout<<"\n Invalid choice";
+      }
+      
+      return 0;
+      }
+      
+      =================================
+      
+      
+        
+        
+     
        
      
    
